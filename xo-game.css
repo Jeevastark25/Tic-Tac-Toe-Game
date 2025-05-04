@@ -1,0 +1,279 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#preface {
+    width: 100%;
+    height: 641px;
+    /* background-color: rgb(198, 228, 240); */
+    background-image: url('./Images/bg-3.jpg');
+    background-size: 100% 650px;
+    background-repeat: no-repeat;
+}
+
+.nav-bar {
+
+    margin-left: 20px;
+
+}
+
+nav {
+
+    width: 95%;
+    height: 50px;
+    display: inline-block;
+    background-color: skyblue;
+    margin-top: 35px;
+    margin-left: 30px;
+    border-radius: 10px;
+
+}
+
+nav span {
+    color: brown;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 20px;
+    justify-content: center;
+    position: relative;
+    top: 15px;
+    padding-left: 30px;
+}
+
+nav ul {
+    display: flex;
+    float: right;
+    font-size: 18px;
+    padding-top: 15px;
+    list-style: none;
+    text-decoration: none;
+    font-weight: bold;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+ul li a {
+    margin-right: 70px;
+    color: white;
+    text-decoration: none;
+}
+
+/***Profile pop**/
+
+#pop {
+    position: relative;
+
+    top: -150px;
+     left: 400px;
+    background-color: green;
+    z-index: 5;
+  
+  }
+  
+  #view {
+    display: none;
+  }
+  
+  .main {
+  
+    position: absolute;
+    border: 1px solid brown;
+    width: 350px;
+    height: 250px;
+    padding: 20px;
+    background-color: white;
+    border-radius: 10px;
+  
+  
+  }
+  #igif{
+    width: 100px;
+    height: 80px;
+    margin-left: 100px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    
+  }
+  .main p{
+    text-align: center;
+    color:brown;
+    font-size: 30px;
+
+  }
+
+.close {
+    color: white;
+    background-color: green;
+    border-radius: 10px;
+    margin-top: 10px;
+    width: 100px;
+    height: 50px;
+    margin-left: 100px;
+    font-size: 18px;
+    font-weight: bold;
+  
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  
+  
+
+#board {
+    position: absolute;
+    right: 150px;
+    width: 500px;
+    height: 450px;
+    margin: auto;
+    width: 50%;
+    padding: 10px;
+    margin-top: 30px;
+    padding-left: 70px;
+    display: grid;
+    grid-template-columns: 22% 22% 22%;
+    grid-template-rows: 28% 28% 28% ;
+}
+.id{
+    width: 130px;
+    height: 120px;
+    background-color: whitesmoke;
+    justify-content: center;
+    align-items: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    border-radius: 20px;
+    border-top: 1px solid brown;
+    border-right: 1px solid brown;
+   box-shadow:  -5px -5px 9px rgba(255, 255, 255, 0.45),
+    5px 5px 9px rgba(94, 104, 121, 0.3); 
+    text-align: center;
+    padding-top: 50px;
+    margin-top: 40px;
+}
+#id3,#id6,#id9{
+   border-left: 1px solid brown;
+   border-right: none;
+   box-shadow:  -5px -5px 9px rgba(255, 255, 255, 0.45),
+    5px 5px 9px rgba(94, 104, 121, 0.3); 
+}
+#id0,#id1,#id2{
+    border-top: none;
+    border-left: 1px solid brown;
+
+}
+#id3,#id4,#id5{
+    border-top: 1px solid brown;
+    border-right: 1px solid brown;
+}
+#id0,#id3,#id6{
+    border-right: 1px solid brown;
+}
+#id1,#id4,#id7{
+    border-left: 1px solid brown;
+}
+#row{
+    position: relative;
+    display: flex;
+    
+}
+.counter{
+    
+    width:400px;
+    height: auto;
+    position: absolute;
+    left: 100px;
+    padding-left: 10px;
+    padding-top: 20px;
+    top: 80px;
+
+}
+.counter table{
+    width: 400px;
+    height: 50px;
+    border-collapse: collapse;
+    border-radius: 8px;
+    background-color: cyan;
+}
+.counter table thead th{
+   
+    color: brown;
+    padding: 10px;
+    font-size: 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+#blue{
+    border-left: 6px solid green;
+    border-bottom:6px solid black;
+}
+#red{
+    border-right: 6px solid green;
+    border-bottom:6px solid red;
+}
+.green{
+    border-bottom: 6px solid gold;
+}
+
+.x-color{
+    color: red;
+}
+.o-color{
+    color: Blue;
+}
+#turn-1{
+    color: red;
+    font-size: 20px;
+}
+#turn-2{
+    color: green;
+    font-size: 20px;
+}
+#turn-3{
+    color: blue;
+    font-size: 20px;
+}
+.counter table tbody td{
+    padding: 10px;
+    background-color: #eee;
+    border-radius: 8px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    
+
+}
+.restbtn{
+    width: 80px;
+    height: 40px;
+    border-radius: 10px;
+    border: none;
+    position: relative;
+    top: 470px;
+    left: 55%;
+    background-color: green;
+    color: white;
+}
+  
+#gif{
+    width: 220px;
+    height: 300px;
+    position: relative;
+    float:right;
+    display: flex;
+    right: 100px;
+    top: 100px;
+    background: white;
+    
+}
+#gif1{
+   width: 100%;
+   height: 300px;
+   background-image: url('./Images/red-team.gif');
+   background-size: 100% 300px;
+   background-repeat: no-repeat;
+   border: 10px solid red;
+   border-radius: 20px;
+}
